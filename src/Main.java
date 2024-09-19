@@ -10,26 +10,32 @@ public class Main {
 		 */
 
 		Scanner in = new Scanner(System.in);
-		System.out.println("Welcome to Mad Libs!");
-		System.out.println("Give me a name");
-		String name = in.nextLine();
-		System.out.println("Give me a number");
+		
 
-		int num1 = in.nextInt();
-		System.out.println("One day, " + name + " wrote a Mad Lib in class!");
+		
 		System.out.println("Yesterday there was a soccer game");
 		// flush
 		in.nextLine();
-		System.out.println("");
-		in.nextLine();
-		System.out.println("Give me another name: ");
-		int person1 = in.nextInt();
+	
+		System.out.println("Give me a name: ");
+		String person1 = in.nextLine();
 		System.out.println("Give ma a day of the month");
-		int dayofthemonth = in.nextInt();
+		String dayofthemonth = in.nextLine();
 		System.out.println("Give me a location");
-		int location = in.nextInt();
+		String location = in.nextLine();
+		System.out.println("Give me a name: ");
 		String person2 = in.nextLine();
+		System.out.println("Give me your favourite number");
+		String num1 = in.nextLine();
+		System.out.println("Give me a phrase that you say when you are happy");
+		String phrase = in.nextLine();
+		System.out.println("Give me a decimal: ");
+		String dec = in.nextLine();
 		System.out.println("On " + dayofthemonth + ", " + person1 + " and " + person2 + " were at " + location
-				+ " when a stranger slipped");
+				+ " when a stranger slipped. "
+				+ " "+person1+" looked at "+person2+" and they helped the stranger in about "+num1+" and "+dec+" seconds! "
+				+ " The stranger looks at "+person1+" and "+person2+" and says "+phrase+" "
+			
+				);
 	}
 }
